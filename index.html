@@ -29,6 +29,16 @@
   }
   .wrap { max-width: 1060px; margin: 0 auto; padding: 0 24px; }
 
+  /* ---------- Portfolio disclosure ---------- */
+  /* Deliberately the first thing rendered, and not sticky: it must be seen on
+     arrival, but the page is a demonstration and should still read as one. */
+  .disclosure {
+    background: var(--dark2); color: #D7EFE8;
+    font-size: .82rem; line-height: 1.5; text-align: center;
+    padding: 10px 24px;
+  }
+  .disclosure strong { color: var(--mint); font-weight: 700; }
+
   /* ---------- Nav ---------- */
   nav {
     position: sticky; top: 0; z-index: 10;
@@ -181,6 +191,11 @@
 </style>
 </head>
 <body>
+
+<div class="disclosure">
+  <strong>This is not a real company.</strong> This page is a portfolio project that
+  demonstrates the design of a biotechnology data platform, and nothing on it is for sale.
+</div>
 
 <nav>
   <div class="wrap nav-inner">
